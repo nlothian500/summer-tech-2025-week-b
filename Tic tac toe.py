@@ -1,16 +1,23 @@
 board = [["-","-","-"], ["-","-","-"],["-","-","-"]]
 #print(board)
+#board[1][1] ="x"
+for b in range(3):
+    print( )
+    for j in range(3):
+        print(board[b][j],end="")
 
-for b in range(1):
-    print(board[0][1],end="")
-    for g in range(1):
-        print(board[1][2],end="")
+player1 = "x"
+player2 = "o"
+w = int(input("enter your row number"))
+f = int(input("enter your column number"))
+board[0][0] = "x"
+print(board)
 
-print(board[1])
 
-print(board[2][0])
 
-print(board[0])
+
+
+
 
 
 
