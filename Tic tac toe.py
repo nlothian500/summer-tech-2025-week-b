@@ -15,7 +15,7 @@ while runningame == True:
 
     if player == [0][0] and player == [0][1] and player == [0][2]:
         print(player+"won")
-        board == [0][0] and [0][1] and [0][2]
+        #board == [0][0] and [0][1] and [0][2]
     if player == [1][0] and player == [1][1] and player == [1][2]:
         print(player+"won")
     if player == [2][0] and player == [2][1] and player == [2][2]:
