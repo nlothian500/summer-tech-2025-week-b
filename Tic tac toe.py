@@ -13,11 +13,12 @@ while runningame == True:
     f = int(input("enter your column number"))
     board[w][f] = player
 
-    if player == [0][0] and player == [0][1] and player == [0][2]:
+    if board[0][0] == player == player and [0][1] == player and [0][2] == player:
         print(player+"won")
-        #board == [0][0] and [0][1] and [0][2]
-    if player == [1][0] and player == [1][1] and player == [1][2]:
+     
+    if [1][0] == player and  [1][1] == player and  == [1][2]:
         print(player+"won")
+       
     if player == [2][0] and player == [2][1] and player == [2][2]:
         print(player+"won")
 
@@ -25,4 +26,12 @@ while runningame == True:
         player = "o"
     elif player == "o":
         player = "x"
+    
+    runningame = False
 
+
+
+
+
+
+player == [0][0]
