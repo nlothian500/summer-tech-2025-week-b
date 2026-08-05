@@ -1,8 +1,9 @@
-for s in range(4):
-    print("*")
-    for j in range(s):
-        print("*",end="")
+n =int(input("Please enter the size of your square"))
 
+for s in range(n):
+    for j in range(n):
+        print("*",end="")
+    print()
 
 
 
