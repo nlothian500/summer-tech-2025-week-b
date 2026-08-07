@@ -14,16 +14,36 @@ while runningame == True:
     board[w][f] = player
 
     if board[0][0] == player and board[0][1] == player and board[0][2] == player:
-        print(player + "won")
+        print(player + " won")
         runningame = False
-     
+        
     if board[1][0] == player and board[1][1] == player and board[1][2] == player:
-        print(player + "won")
-        runningame = False
+        print(player + " won")
+        #runningame = False
 
     if board[2][0] == player and board[2][1] == player and board[2][2] == player:
-        print(player + "won")
-        runningame = False
+        print(player + " won")
+        #runningame = False
+        
+    if board[2][1] == player and board[1][1] == player and board[0][1] == player:
+        print(player + " won")
+        #runningame = False
+    
+    if board[2][0] == player and board[1][0] == player and board[0][0] == player:
+        print(player + " won")
+        #runningame = False
+    
+    if board[2][2] == player and board[1][2] == player and board[0][2] == player:
+        print(player + " won")
+        #runningame = False
+        
+    if board[2][0] == player and board[1][1] == player and board[0][2] == player:
+        print(player + " won")
+        #runningame = False
+        
+    if board[2][2] == player and board[1][1] == player and board[0][0] == player:
+        print(player + " won")
+        #runningame = False
     
     if player == "x":
         player = "o"
