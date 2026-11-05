@@ -30,3 +30,7 @@ print(f"Educational Tax: {educational_tax}")
 
 total_deductions = NHT + PAYE + NIS + educational_tax
 print(f"Total Deductions: {total_deductions}")
+
+Net_salary = gross_salary - total_deductions 
+print(f"Net Salary: {Net_salary}")
+
