@@ -1,19 +1,19 @@
 
-identification = input("Please enter the employee I.D")
+employee_id = input("Please enter the employee I.D")
 
 employee_name = input("Please enter the employee full name: ")
 
-status = input("Please enter the employee status: ")
-if status == "fortnightly":
+employment_status = input("Please enter the employee status: ")
+if employment_status == "fortnightly":
     hourly_rate = 550
-elif status == "monthly":
+elif employment_status == "monthly":
     hourly_rate = 1200
 else:
     print("Invalid employment status")
 
-hours = int(input("Please enter the number of hours the employee worked: "))
+hours_work = int(input("Please enter the number of hours the employee worked: "))
 
-gross_salary = hourly_rate * hours
+gross_salary = hourly_rate * hours_work
 print(f"Gross Salary: {gross_salary}")
 
 NHT = gross_salary * 2/100
