@@ -4,18 +4,22 @@ while True:
     employee_name = input("Please enter the employee full name: ")
 
     employment_status = input("Please enter the employee status: ")
-    if employment_status == "fortnightly":
-        hourly_rate = 550
-    elif employment_status == "monthly":
-        hourly_rate = 1200
-    else:
-        print("Invalid employment status try again")
-        
+    while employment_status != "fortnightly" or "monthly":
+        if employment_status == "fortnightly":
+            hourly_rate = 550
+        elif employment_status == "monthly":
+            hourly_rate = 1200
+        else:
+            print("Invalid employment status try again")
+            employment_status = input("Please enter the employee status: ")
+        if employment_status == "fortnightly" or "monthly":
+            break
+            
 
     hours_work = int(input("Please enter the number of hours the employee worked: "))
-    if hours_work < 0:
+    while hours_work < 0:
         print("Invalid hours the hours cannot be negative")
-        break
+        hours_work = int(input("Please enter the number of hours the employee worked: "))
 
     gross_salary = hourly_rate * hours_work
     print(f"Gross Salary: ${gross_salary:.2f}")
