@@ -1,3 +1,13 @@
+employee_count = 0
+combined_gross = 0 
+combined_NHT = 0
+combined_PAYE = 0
+combined_NIS = 0
+combined_education_tax = 0
+combined_deductions = 0
+combined_net_salary = 0
+
+
 while True:
     employee_id = input("Please enter the employee I.D")
 
@@ -41,12 +51,30 @@ while True:
     Net_salary = gross_salary - total_deductions 
     print(f"Net Salary: ${Net_salary:.2f}")
 
+    employee_count += 1
+    combined_gross += gross_salary
+    combined_NHT += NHT
+    combined_PAYE += PAYE
+    combined_NIS += NIS
+    combined_education_tax += educational_tax
+    combined_deductions += total_deductions
+    combined_net_salary += Net_salary
 
     choice = input("Would you like to process another employee?")
     if choice == "yes":
         continue
     else:
         break
+
+print(f"Total Employees: {employee_count}")
+print(f"Combined Gross Salary: ${combined_gross:.2f}")
+print(f"Combined NHT: ${combined_NHT:.2f}")
+print(f"Combined PAYE: ${combined_PAYE:.2f}")
+print(f"Combined NIS: ${combined_NIS:.2f}")
+print(f"Combined Education Tax: ${combined_education_tax:.2f}")
+print(f"Combined Total Deductions: ${combined_deductions:.2f}")
+print(f"Combined Net Salary: ${combined_net_salary:.2f}")
+
 
 
 
