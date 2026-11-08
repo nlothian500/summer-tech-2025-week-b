@@ -15,6 +15,7 @@ while True:
     hours_work = int(input("Please enter the number of hours the employee worked: "))
     if hours_work < 0:
         print("Invalid hours the hours cannot be negative")
+        break
 
     gross_salary = hourly_rate * hours_work
     print(f"Gross Salary: ${gross_salary:.2f}")
@@ -36,6 +37,7 @@ while True:
 
     Net_salary = gross_salary - total_deductions 
     print(f"Net Salary: ${Net_salary:.2f}")
+
 
     choice = input("Would you like to process another employee?")
     if choice == "yes":
